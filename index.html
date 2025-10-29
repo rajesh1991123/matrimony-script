@@ -9,5 +9,16 @@
 <body>
   <div id="profilesGrid"></div>
   <script src="https://cdn.jsdelivr.net/gh/rajesh1991123/matrimony-script@latest/inspire-matrimony.js"></script>
+  <!-- 🔧 Inspire Matrimony – JS Activation Fix -->
+<script>
+window.addEventListener('DOMContentLoaded', function(){
+  // force reload of matrimony.js even in iframe or delayed load
+  const s = document.createElement('script');
+  s.src = 'https://cdn.jsdelivr.net/gh/rajesh1991123/matrimony-script@latest/inspire-matrimony.js';
+  s.defer = true;
+  document.body.appendChild(s);
+});
+</script>
+
 </body>
 </html>
